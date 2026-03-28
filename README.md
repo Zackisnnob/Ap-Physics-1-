@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,21 +7,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0a0a0f;
-    --surface: #111118;
-    --card: #16161f;
-    --border: #2a2a3a;
-    --accent: #00e5ff;
-    --accent2: #ff4081;
-    --accent3: #69ff47;
-    --accent4: #ffab40;
-    --accent5: #ce93d8;
-    --accent6: #80cbc4;
-    --accent7: #ef9a9a;
-    --accent8: #b0bec5;
-    --text: #e8e8f0;
-    --muted: #7878a0;
-    --formula-bg: #0d0d1a;
+    --bg: #f4f6ff;
+    --surface: #ffffff;
+    --card: #ffffff;
+    --border: #d0d8f0;
+    --accent: #0066cc;
+    --accent2: #e0005a;
+    --accent3: #1a8a00;
+    --accent4: #c26a00;
+    --accent5: #7b22b8;
+    --accent6: #006e6a;
+    --accent7: #b52020;
+    --accent8: #3a5068;
+    --text: #1a1a2e;
+    --muted: #5a6080;
+    --formula-bg: #eef2ff;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -38,7 +37,7 @@
 
   /* HEADER */
   .hero {
-    background: linear-gradient(135deg, #0a0a0f 0%, #0f0f2a 50%, #0a0a0f 100%);
+    background: linear-gradient(135deg, #dce8ff 0%, #eef2ff 50%, #d8f0ff 100%);
     border-bottom: 1px solid var(--border);
     padding: 60px 40px 50px;
     text-align: center;
@@ -52,7 +51,7 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(ellipse at center, rgba(0,229,255,0.06) 0%, transparent 60%);
+    background: radial-gradient(ellipse at center, rgba(0,102,204,0.08) 0%, transparent 60%);
     pointer-events: none;
   }
   .hero-label {
@@ -70,7 +69,7 @@
     font-weight: 700;
     line-height: 1.15;
     margin-bottom: 16px;
-    color: #fff;
+    color: #0a0a2e;
     letter-spacing: -1px;
   }
   .hero h1 span { color: var(--accent); }
@@ -104,7 +103,7 @@
 
   /* TOC */
   .toc {
-    background: var(--surface);
+    background: #eef2ff;
     border-bottom: 1px solid var(--border);
     padding: 30px 40px;
   }
@@ -231,6 +230,7 @@
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
   }
   .card.full { grid-column: 1 / -1; }
   .card-title {
@@ -267,7 +267,7 @@
     align-items: flex-start;
     gap: 12px;
     padding: 4px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
+    border-bottom: 1px solid rgba(0,0,0,0.07);
     flex-wrap: wrap;
   }
   .formula-row:last-child { border-bottom: none; }
@@ -282,7 +282,7 @@
   .concept-list { list-style: none; }
   .concept-list li {
     padding: 8px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.07);
     font-size: 14px;
     display: flex;
     gap: 10px;
@@ -297,14 +297,14 @@
     flex-shrink: 0;
     margin-top: 2px;
   }
-  .concept-list li strong { color: #fff; }
+  .concept-list li strong { color: #0a0a2e; }
 
   /* KEY CONCEPT HIGHLIGHT */
   .highlight-box {
     border-left: 3px solid;
     padding: 14px 18px;
     border-radius: 0 8px 8px 0;
-    background: rgba(255,255,255,0.03);
+    background: rgba(0,0,0,0.03);
     margin: 8px 0;
     font-size: 14px;
   }
@@ -327,7 +327,7 @@
   }
   .data-table td {
     padding: 9px 12px;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
     vertical-align: top;
   }
   .data-table td:first-child { font-weight: 700; }
@@ -335,8 +335,8 @@
 
   /* TIPS */
   .tip {
-    background: rgba(0,229,255,0.05);
-    border: 1px solid rgba(0,229,255,0.2);
+    background: rgba(0,102,204,0.06);
+    border: 1px solid rgba(0,102,204,0.25);
     border-radius: 8px;
     padding: 14px 18px;
     font-size: 13px;
@@ -386,7 +386,7 @@
   }
 
   .exam-note {
-    background: linear-gradient(135deg, rgba(255,64,129,0.08), rgba(0,229,255,0.08));
+    background: linear-gradient(135deg, rgba(224,0,90,0.06), rgba(0,102,204,0.06));
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 24px;
