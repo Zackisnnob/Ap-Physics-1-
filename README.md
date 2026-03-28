@@ -1,7 +1,3 @@
-# Ap-Physics-1-
-Generational throw
-Put ts in:
-
 
 <!-- <!DOCTYPE html>
 <html lang="en">
